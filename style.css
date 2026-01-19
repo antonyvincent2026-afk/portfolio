@@ -1,0 +1,49 @@
+h1 {color: #1C2C5B;
+    text-align: center;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 50px;
+    }
+
+body {
+    width: 50%;
+    margin: auto;
+    }
+#byline {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    }
+
+#intro {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;}
+    
+#para2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;}
+
+#para3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;}
+
+#para4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;}
+
+#para5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;}
+
+#article {
+    border: 1px solid black; 
+    }   
+    /* for phones */
+    @media (orientation: portrait) {
+        body {
+            width: 100%;
+        }
+    }
