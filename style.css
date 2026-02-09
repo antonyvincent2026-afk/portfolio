@@ -1,49 +1,75 @@
-h1 {color: #1C2C5B;
-    text-align: center;
-    font-family: 'Arial Black', Gadget, sans-serif;
-    font-size: 50px;
-    }
-
+/*Centers the entire page content and limits width on desktop*/
 body {
     width: 50%;
     margin: auto;
     }
+/*Styles the article container with a border and padding for better readability*/
+#article {
+    border: 1px solid black; 
+    padding: 16px;
+    }   
+/*Styles main title of the article */
+h1 {color: #1C2C5B;
+    text-align: center;
+    font-family: 'Arial Black', Gadget, sans-serif;
+    font-size: 50px;
+    margin-top: 0;
+    }
+
+/* styles the byline*/ 
 #byline {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
     }
 
-#intro {
+/* styles the paragraphs*/ 
+p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 1.6;
     font-size: 18px;}
+/* styles the unordered list and list items*/
+ul {
+    padding-left: 20px;
+    }
+/* Adds style to list items*/
+li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 18px;
+    }
+/* styles the caption for the image and centers it below the image*/ 
+.caption {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+    }
+/* styles the credit span within the caption and makes it smaller than the main caption text*/
+.caption .credit {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
     
-#para2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1.6;
-    font-size: 18px;}
-
-#para3 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1.6;
-    font-size: 18px;}
-
-#para4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1.6;
-    font-size: 18px;}
-
-#para5 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 1.6;
-    font-size: 18px;}
-
-#article {
-    border: 1px solid black; 
-    }   
     /* for phones */
-    @media (orientation: portrait) {
+/* Applies styles when the phone is help vertically */
+@media (orientation: portrait) {
         body {
             width: 100%;
+        }
+
+        h1 {
+            font-size: 2.2em;
+        }    
+        p, 
+        li{
+            font-size: 2em;
+        }
+        .caption,
+        .caption .credit {
+            font-size: 1.5em;
         }
     }
